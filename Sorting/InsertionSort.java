@@ -2,10 +2,10 @@
 // https://www.acmicpc.net/problem/1427
 import java.util.Scanner;
 
-public class Main{
+public class InsertionSort{
     public static void main(String[] args){
         String input;
-        int temp;
+        int temp, index;
 
         Scanner sc = new Scanner(System.in);
         input = sc.next();
@@ -14,19 +14,25 @@ public class Main{
         for(int i=0;i<input.length();i++){
             nums[i] = Integer.parseInt(input.charAt(i)+"");
         }
-        // 버블 정렬 알고리즘
-        for(int i=0;i<nums.length-1;i++){
-            for(int j=0;j<nums.length-1-i;j++){
-                if(nums[j] > nums[j+1]){
-                    temp = nums[j+1];
-                    nums[j+1] = nums[j];
-                    nums[j] = temp;
+        // 삽입 정렬 알고리즘
+        for(int i=1;i<nums.length;i++){
+            temp = nums[i];
+            index = i-1;
+            while(index>=0){
+                if(nums[index] > temp){
+                    nums[index+1] = nums[index];
+                    index--;
+                }
+                else{
+                    break;
                 }
             }
+            nums[index+1]=temp;
+
         }
         // 결과 출력
         for(int k=nums.length-1;k>-1;k--){
-            System.out.print(nums[k]);
+           System.out.print(nums[k]);
         }
     }
 }

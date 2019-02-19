@@ -2,10 +2,10 @@
 // https://www.acmicpc.net/problem/1427
 import java.util.Scanner;
 
-public class Main{
+public class BubbleSort{
     public static void main(String[] args){
         String input;
-        int minVal, minIndex;
+        int temp;
 
         Scanner sc = new Scanner(System.in);
         input = sc.next();
@@ -14,18 +14,15 @@ public class Main{
         for(int i=0;i<input.length();i++){
             nums[i] = Integer.parseInt(input.charAt(i)+"");
         }
-        // 선택 정렬 알고리즘
-        for(int j=0;j<nums.length-1;j++){
-            minVal = nums[j];
-            minIndex=j;
-            for(int k=j+1;k<nums.length;k++){
-                if(nums[k]<minVal){
-                    minVal=nums[k];
-                    minIndex = k;
+        // 버블 정렬 알고리즘
+        for(int i=0;i<nums.length-1;i++){
+            for(int j=0;j<nums.length-1-i;j++){
+                if(nums[j] > nums[j+1]){
+                    temp = nums[j+1];
+                    nums[j+1] = nums[j];
+                    nums[j] = temp;
                 }
             }
-            nums[minIndex] = nums[j];
-            nums[j] = minVal;
         }
         // 결과 출력
         for(int k=nums.length-1;k>-1;k--){
