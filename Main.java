@@ -11,7 +11,7 @@ public class Main{
         int[] nums = new int[input.length()];
         for(int i=0;i<input.length();i++){
             nums[i] = Integer.parseInt(input.charAt(i)+"");
-        }
+        }  
         // 삽입 정렬 알고리즘
         for(int i=1;i<nums.length;i++){
             temp = nums[i];
