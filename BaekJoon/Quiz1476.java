@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main{
+public class Quiz1476{
     public static void main(String[] args){
         int e, s, m, res, cnt=0;
         Scanner sc = new Scanner(System.in);
