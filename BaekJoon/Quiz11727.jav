@@ -1,5 +1,8 @@
 import java.io.*;
 
+// 점화식 규칙 풀이
+// top-down 방식으로는 문제가 안 풀린다...?
+
 public class Quiz11727 {
     public static int[] res;
     public static void main(String[] args) throws IOException{
