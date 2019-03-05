@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class Main {
+public class Quiz11727 {
     public static int[] res;
     public static void main(String[] args) throws IOException{
         int input;
