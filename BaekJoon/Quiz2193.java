@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class Main {
+public class Quiz2193 {
     
     public static long[][] res;
     public static void main(String[] args) throws IOException{
