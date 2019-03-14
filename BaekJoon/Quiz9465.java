@@ -3,7 +3,7 @@
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Quiz9465 {
     
     public static long[][] res;
     public static long[][] arr;
