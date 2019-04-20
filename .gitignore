@@ -1,2 +1,4 @@
 .vscode/
 Main.class
+*/.ipynb_checkpoints
+.ipynb_checkpoints
