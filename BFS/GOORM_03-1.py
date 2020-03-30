@@ -19,7 +19,7 @@ def bfs(p):
     queue.append(p)
 
     # 무한루프에 빠지지 않도록 ck값으로 확인
-    while len(queue) != 0:
+    while queue:
         p_next = queue.popleft()
         if p_next not in ck:
             ck.add(p_next)
